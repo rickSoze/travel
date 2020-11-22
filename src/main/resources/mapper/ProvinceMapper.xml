@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 一定要注意名称空间的指定 -->
+<mapper namespace="com.wh.dao.ProvinceDao">
+    <select id="findByPage" resultType="Province">
+        select id,name,tags,placecounts
+        from t_province
+        order by placecounts  DESC
+        limit #{start},#{rows}
+    </select>
+
+    <select id="findTotal" resultType="integer">
+        select count(id) from t_province
+    </select>
+
+    <update id="update">
+        update t_province set name = #{name},tags=#{tags},placecounts=#{placecounts} where id = #{id};
+    </update>
+
+    <select id="getByName" resultType="com.wh.bean.Province">
+        select * from t_province where name=#{name}
+    </select>
+    <select id="getById" resultType="com.wh.bean.Province" >
+        select * from t_province where id=#{id}
+    </select>
+
+
+    <insert id="add" useGeneratedKeys="true" keyProperty="id">
+        insert into t_province (name,tags,placecounts) values (#{name},#{tags},#{placecounts});
+    </insert>
+
+    <delete id="delete" parameterType="string">
+        delete from t_province where id=#{id}
+    </delete>
+
+
+
+
+</mapper>

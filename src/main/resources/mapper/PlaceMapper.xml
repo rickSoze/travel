@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 一定要注意名称空间的指定 -->
+<mapper namespace="com.wh.dao.PlaceDao">
+    <select id="findByPage" resultType="Place">
+        select id,name,picpath,hottime,hotticket,dimticket,placedes,provinceid
+        from t_place
+        where provinceid = #{provinceid}
+        order by hotticket
+        limit #{start},#{rows}
+    </select>
+
+    <select id="findTotal" resultType="integer" parameterType="string">
+        select count(id) from t_place where provinceid=#{provinceid}
+    </select>
+
+    <insert id="add" useGeneratedKeys="true" keyProperty="id">
+        insert into t_place (name,picpath,hottime,hotticket,dimticket,placedes,provinceid)
+        values (#{name},#{picpath},#{hottime},#{hotticket},#{dimticket},#{placedes},#{provinceid});
+    </insert>
+
+    <select id="getByName" resultType="com.wh.bean.Place">
+        select * from t_place where name=#{name}
+    </select>
+
+    <select id="getById" resultType="com.wh.bean.Place">
+        select * from t_place where id=#{id}
+    </select>
+
+    <delete id="delete" parameterType="string">
+        delete from t_place where id=#{id}
+    </delete>
+
+    <update id="update">
+        UPDATE
+  t_place
+SET
+  name = #{name} ,
+  picpath = #{picpath} ,
+  hottime = #{hottime} ,
+  hotticket = #{hotticket} ,
+  dimticket = #{dimticket} ,
+  placedes = #{placedes} ,
+  provinceid = #{provinceid}
+WHERE id = #{id} ;
+    </update>
+
+
+</mapper>
