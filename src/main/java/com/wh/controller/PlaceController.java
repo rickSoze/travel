@@ -14,6 +14,7 @@ import org.springframework.util.Base64Utils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.sound.sampled.Line;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -47,12 +48,14 @@ public class PlaceController {
     public Result updatePlace(Place place, MultipartFile pic){
         Result result = new Result();
         try {
-            String extension = FilenameUtils.getExtension(pic.getOriginalFilename());
-            String newFileName = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date()) + extension;
-            place.setPicpath(Base64Utils.encodeToString(pic.getBytes()));
+            if (pic!=null){
+                String extension = FilenameUtils.getExtension(pic.getOriginalFilename());
+                String newFileName = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date()) + extension;
+                place.setPicpath(Base64Utils.encodeToString(pic.getBytes()));
 
-            File file = new File(realPath);
-            pic.transferTo(new File(file,newFileName));
+                File file = new File(realPath);
+                pic.transferTo(new File(file,newFileName));
+            }
 
             placeService.update(place);
             result.setMsg("修改成功！");

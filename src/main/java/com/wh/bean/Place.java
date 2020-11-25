@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Component;
 
 import java.sql.Date;
@@ -19,6 +18,7 @@ public class Place {
     private Integer id;
     private String name;
     private String picpath;
+
     @JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd")
     private Date hottime;
     private Double hotticket;

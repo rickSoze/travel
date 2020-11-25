@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c8e4edc-805e-4844-9ce1-39f85a13a884" name="Default Changelist" comment="" />
+    <list default="true" id="5c8e4edc-805e-4844-9ce1-39f85a13a884" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wh/bean/Place.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wh/bean/Place.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wh/controller/PlaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wh/controller/PlaceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wh/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wh/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/viewspot/addviewspot.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/viewspot/addviewspot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/viewspot/updateviewspot.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/viewspot/updateviewspot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wh/bean/Place.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wh/bean/Place.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wh/controller/PlaceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wh/controller/PlaceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wh/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wh/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wh/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wh/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/travel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/travel.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel.iws" beforeDir="false" afterPath="$PROJECT_DIR$/travel.iws" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +29,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -32,9 +48,9 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -239,10 +255,26 @@
       <workItem from="1605939902546" duration="12842000" />
       <workItem from="1606010236880" duration="1213000" />
       <workItem from="1606024602891" duration="10709000" />
+      <workItem from="1606043221338" duration="48000" />
+      <workItem from="1606138214966" duration="47000" />
+      <workItem from="1606281573082" duration="2903000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
